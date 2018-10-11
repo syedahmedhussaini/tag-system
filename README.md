@@ -20,6 +20,7 @@ For the full documentation, please check out [the Bedrock website](https://bedro
 
 * `gulp`: runs the prototype
 * `gulp build`: create a build (which ends up in the `dist` folder) that can be deployed to a server
+* `./node_modules/.bin/tailwind build styles.css -c ./tailwind.js -o ./styles/output.css` : builds the Tailwind output file (which should be copied to `content/scss/` and renamed to an scss extension) from the Tailwind config file (`tailwind.js`) and the style file (`styles.css`)
 
 ## Upgrading bedrock
 
