@@ -1,0 +1,22 @@
+mixin sample(component)
+    .br-sample-container.border-b-2.border-grey-60.pb-6.mb-2(id='component-' + component.name)
+        .br-sample-component-header.flex.justify-between.my-4.items-center
+            if component.docs
+                h3(class=styleguideSampleHeadingClass)= component.docs.attributes.title || component.name
+            else
+                h3(class=styleguideSampleHeadingClass)= component.name
+            a.rounded-full.bg-accent-100.text-white.no-underline.h-6.w-6.text-center.leading-normal(href="#component-"+component.name) #
+        if component.docs
+            .br-sample-documentation(class=styleguideRichContentClass)!= component.docs.body
+        .br-sample-component.bg-white.shadow-sm.p-6.border-2.border-b-0.border-grey-60.my-4.mb-0!= render(component.filename, 'html')
+        .br-sample-footer.bg-grey-60.p-4
+            if config.styleguide.snippetLanguage === 'html'
+                button.br-sample-show-code-btn(class=styleguideButtonClass) Show HTML code
+            if config.styleguide.snippetLanguage === 'pug'
+                button.br-sample-show-code-btn(class=styleguideButtonClass) Show Markup
+            .br-sample-code
+                button.br-sample-copy-code-btn(class=styleguideButtonClass) Copy to clipboard
+                if config.styleguide.snippetLanguage === 'html'
+                    pre.br-sample-markup= render(component.filename, 'html')
+                if config.styleguide.snippetLanguage === 'pug'
+                    pre.br-sample-markup= render(component.filename, 'pug')

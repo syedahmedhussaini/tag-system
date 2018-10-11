@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="20px" height="24px" viewBox="0 0 20 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-lock</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+        <g id="icons" transform="translate(-192.000000, 1.000000)" stroke="#111111" stroke-width="2">
+            <g id="icon-lock" transform="translate(193.000000, 0.000000)">
+                <g id="Group">
+                    <path d="M9,-5.69206141e-18 C7.66990575,-0.0132303807 6.39043461,0.509304222 5.44986941,1.44986941 C4.50930422,2.39043461 3.98676962,3.66990575 4,5 L4,8 L14,8 L14,5 C14.0132304,3.66990575 13.4906958,2.39043461 12.5501306,1.44986941 C11.6095654,0.509304222 10.3300943,-0.0132303807 9,-5.69206141e-18 Z" id="Shape"></path>
+                    <rect id="Rectangle-path" x="0" y="8" width="18" height="14" rx="2"></rect>
+                    <circle id="Oval" cx="9" cy="14" r="2"></circle>
+                    <path d="M9,16 L9,18" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

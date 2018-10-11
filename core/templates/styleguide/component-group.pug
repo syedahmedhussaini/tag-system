@@ -1,0 +1,18 @@
+extends index
+
+block append pageVariables
+    - var pageTitle = componentGroup.docs && componentGroup.docs.attributes.title || componentGroup.group.id
+    - var moduleTitle = pageTitle + ' - Styleguide'
+
+block content
+    .p-8.bg-grey-40.border-b.border-grey-60
+      if !componentGroup.docs
+          h1.br-componentgroup-header(class=styleguideComponentGroupHeaderClass)= componentGroup.group.id
+      else
+          h1.br-componentgroup-header(class=styleguideComponentGroupHeaderClass)= componentGroup.docs.attributes.title || componentGroup.group.id
+          .br-content(class=styleguideRichContentClass)
+              != componentGroup.docs.body
+
+    each component in componentGroup.components
+      .px-8.py-2
+        +sample(component)

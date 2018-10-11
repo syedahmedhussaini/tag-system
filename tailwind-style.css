@@ -1,0 +1,60 @@
+
+@tailwind preflight;
+
+@tailwind components;
+
+@tailwind utilities;
+
+/* Components */
+
+/* 01 - Buttons  */
+
+.btn-primary {
+  @apply
+    rounded
+    p-4
+    bg-interactive-100
+    text-white
+    font-body
+    text-sm
+    font-bold
+    border-2
+    border-interactive-100;
+}
+
+.btn-primary:hover {
+  @apply
+    bg-interactive-dark
+    text-white-100
+    border-interactive-dark;
+}
+
+.btn-secondary {
+  @apply
+    rounded
+    p-4
+    bg-white
+    text-interactive
+    font-body
+    text-sm
+    font-bold
+    border-2
+    border-interactive-100;
+}
+.btn-secondary:hover {
+  @apply
+    text-interactive-dark
+    border-interactive-dark;
+}
+
+.btn-link {
+  @apply
+    text-interactive
+    font-body
+    text-sm
+    font-bold;
+}
+
+.btn-link:hover {
+  @apply text-interactive-dark;
+}

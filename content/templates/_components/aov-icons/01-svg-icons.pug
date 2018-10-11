@@ -1,0 +1,8 @@
+.flex.flex-row.flex-wrap
+  each category, id in icons.svg
+    //- if id
+    //-     h3 #{id}
+    each icon in category
+        .bg-white.border-2.border-grey-60.m-2.flex.flex-row.items-center.p-4(class='w-1/4')
+            +icon(icon.category+'/'+icon.name)
+            p.ml-2.font-body.font-bold.text-base.text-80 #{icon.name}

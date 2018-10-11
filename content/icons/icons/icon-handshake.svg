@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="23px" viewBox="0 0 24 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-handshake</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+        <g id="icons" transform="translate(-238.000000, 0.000000)" stroke="#111111" stroke-width="2">
+            <g id="icon-handshake" transform="translate(239.000000, 2.000000)">
+                <g id="Group">
+                    <path d="M13,5 L10.828,7.172 C9.26600059,8.73352775 6.73399941,8.73352775 5.172,7.172 L5,7 L9.929,2.071 C12.6906369,-0.689909032 17.1673631,-0.689909032 19.929,2.071 C22.2202883,4.3625083 22.6615678,7.91787763 21,10.7" id="Shape"></path>
+                    <path d="M14.266,8.266 L17.879,11.879 C19.0501458,13.0504996 19.0501458,14.9495004 17.879,16.121 L16.243,17.757 C15.1177525,18.8824381 13.591475,19.5147187 12,19.5147187 C10.408525,19.5147187 8.88224747,18.8824381 7.757,17.757 L2.071,12.071 C-0.689909032,9.30936307 -0.689909032,4.83263693 2.071,2.071 C3.3782398,0.760107368 5.1487698,0.016190218 7,-8.8817842e-16" id="Shape"></path>
+                    <path d="M17.391,16.609 L13.5,12.719" id="Shape"></path>
+                    <path d="M14.513,18.965 L10.883,15.335" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

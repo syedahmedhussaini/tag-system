@@ -1,0 +1,21 @@
+extends /templates/_layouts/master
+
+block append pageVariables
+    - var htmlClass = 'br-styleguide br-styleguide-default-styles-active'
+
+block body
+    .br-styleguide-container
+        .br-styleguide-container-inner.flex
+            .br-styleguide-navigation.bg-grey-60.overflow-y-scroll(class='w-1/4 h-screen p-8')
+                unless styleguideHideBrand
+                  a(href="/styleguide" class=styleguideBrandClass) #{projectTitle}
+
+                block nav
+                    include ../includes/styleguide-nav
+
+            .br-styleguide-main-content(class='w-3/4')
+              block content
+                  block homeContent
+                      // Place style guide introduction here. By default redirects to first docs page.
+                      script.
+                          window.location = "/styleguide/docs/introduction.html"

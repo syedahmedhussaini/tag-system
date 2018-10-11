@@ -1,0 +1,69 @@
+/* ==========================================================================
+  Colors
+  Only define colors here. Don't use sass color functions, stick to hex values,
+  or the color component in styleguide won't regenerate automatically anymore.
+ ========================================================================== */
+
+/* Text Colors (Accent)
+ ========================================================================== */
+$text-red-dark: #ff0d00;
+$text-red: #d73c4c;
+$text-accent-dark: #16835d;
+$text-accent: #02b77b;
+$text-interactive-dark: #1d60bf;
+$text-interactive: #006be3;
+$text-interactive-night-dark: #4291d1;
+$text-interactive-night: #52b0fc;
+
+/* Text Colors (Grey)
+ ========================================================================== */
+$text-40: rgba(35,40,49,.4);
+$text-60: rgba(35,40,49,.6);
+$text-80: rgba(35,40,49,.8);
+$text-100: rgba(35,40,9,1);
+$text-dark: #181a21;
+$text-white: rgba(255,255,255,.95);
+
+/* UI Colors (Other)
+ ========================================================================== */
+ $white: #ffffff;
+
+ /* UI Colors (Red)
+  ========================================================================== */
+ $red-dark: #ff0d00;
+ $red-100: #d73c4c;
+ $red-80: #e27883;
+ $red-60: #f2c5ca;
+ $red-40: #fbebed;
+
+ /* UI Colors (Accent)
+  ========================================================================== */
+ $accent-dark: #16835d;
+ $accent-100: #02b77b;
+ $accent-80: #60d2ac;
+ $accent-60: #a0e4cd;
+ $accent-50: #d3f3e8;
+
+ /* UI Colors (Interactive)
+  ========================================================================== */
+ $interactive-dark: #1d60bf;
+ $interactive-100: #006be3;
+ $interactive-80: #60a1eb;
+ $interactive-60: #b6d4f6;
+ $interactive-40: #ebf4fd;
+
+ /* UI Colors (Interactive Night)
+  ========================================================================== */
+ $interactive-night-dark: #4291d1;
+ $interactive-night-100: #52b0fc;
+ $interactive-night-80: #75c0fd;
+ $interactive-night-60: #97d0fd;
+ $interactive-night-40: #badffe;
+
+ /* UI Colors (Greys)
+  ========================================================================== */
+ $grey-dark: #a6b0bf;
+ $grey-100: #b5c0d0;
+ $grey-80: #d3d9e2;
+ $grey-60: #e1e6ec;
+ $grey-40: #f5f7f9;

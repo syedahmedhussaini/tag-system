@@ -1,0 +1,22 @@
+extends /templates/_layouts/master
+
+block body
+  .bg-grey-40.h-screen
+    .container.mx-auto
+        .bg-white.p-4(class='w-2/3 mx-auto')
+          if error
+              p(style="color: red") Hey! Some fields were marked as invalid.
+
+          .field
+              label First Name
+              input(type="text")
+          .field
+              label Last Name
+              input(type="text")
+          .field
+              label Message
+              textarea
+                
+          .flex.justify-between.flex-col-reverse.h-24.border-t.border-grey-60.py-4(class="md:flex-row md:items-center md:h-auto")
+            button.btn-link Secondary action
+            input.btn-primary(type="submit")

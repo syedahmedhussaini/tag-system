@@ -1,0 +1,3 @@
+
+        window.configFiles = ["site.js"];
+    
