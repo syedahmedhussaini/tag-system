@@ -2,5 +2,4 @@ mixin icon(name, extraClasses)
     - var svgIconClassPrefix = config.icons && config.icons.svgIconClassPrefix || 'svg-icon'
     - var isMulticolor = name.indexOf('multicolor/') > -1
     - var additionalClasses = `${extraClasses || ''} ${isMulticolor ? 'o-svg-icon-multicolor' : ''}`;
-
-    div(class=`${svgIconClassPrefix} ${svgIconClassPrefix}-${name.replace('/', '-')} ${additionalClasses}`)!= renderSvgIcon(name)
+    i.icon(class=`${name.replace('/', '-')}`)

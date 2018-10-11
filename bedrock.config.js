@@ -45,7 +45,7 @@ module.exports = {
   icons: {
     generateIconFont: false,
     iconFontPath: "./content/scss/_icon-font.scss",
-    svgIconClassPrefix: 'o-svg-icon',
+    svgIconClassPrefix: '',
     iconFontClassPrefix: 'if'
   },
   /**
