@@ -5,7 +5,34 @@
 
 @tailwind utilities;
 
+/* Theme Support */
+
+[theme="financeit"] {
+  --headline-font: 'Cabin';
+  --body-font: 'Noto Sans';
+  --color-interactive: #006be3;
+  --color-interactive-dark: #1d60bf;
+}
+[theme="centah"] {
+  --headline-font: 'Roboto';
+  --body-font: 'Noto Sans';
+  --color-interactive: green;
+  --color-interactive-dark: red;
+}
+[theme="homedepot"] {
+  --headline-font: 'Helvetica';
+  --body-font: 'Helvetica';
+  --color-interactive: #F58321;
+  --color-interactive-dark: #CA4814;
+}
+
+[theme="lowes"] {
+  --color-interactive: #0088cc;
+  --color-interactive-dark: #0099e6;
+}
+
 /* Components */
+
 
 /* 01 - Buttons  */
 
@@ -19,7 +46,8 @@
     text-sm
     font-bold
     border-2
-    border-interactive-100;
+    border-interactive-100
+    text-left;
 }
 
 .btn-primary:hover {
@@ -39,7 +67,8 @@
     text-sm
     font-bold
     border-2
-    border-interactive-100;
+    border-interactive-100
+    text-left;
 }
 .btn-secondary:hover {
   @apply
@@ -52,7 +81,8 @@
     text-interactive
     font-body
     text-sm
-    font-bold;
+    font-bold
+    text-left;
 }
 
 .btn-link:hover {

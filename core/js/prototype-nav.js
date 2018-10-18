@@ -127,6 +127,34 @@ $(window).on('keyup', function (e) {
   }
 });
 
+/**
+ * Theme Support
+ */
+ function switchTheme(theme) {
+  // Switch label on this page
+  $("body").data( "theme" );
+  $('body').attr('theme', theme);
+ }
+
+ function checkSelectedTheme(theme) {
+  $('#'+theme+'.br-prototype-themeselector').prop('checked', true);
+ }
+
+$('.br-prototype-themeselector').on('change',function() {
+  var newTheme = this.value;
+  console.log('fire fire fire');
+  // Switch label on this page
+  switchTheme(newTheme)
+  // Persist language selection
+  navState.themeSelected = newTheme;
+  saveNavState();
+});
+
+// Execute on each page refresh
+checkSelectedTheme(navState.themeSelected);
+switchTheme(navState.themeSelected);
+
+
 
 /**
  * Multilanguage logic

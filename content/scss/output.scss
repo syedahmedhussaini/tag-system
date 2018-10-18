@@ -699,11 +699,11 @@ table {
 }
 
 .bg-interactive-dark {
-  background-color: #1d60bf;
+  background-color: var(--color-interactive-dark);
 }
 
 .bg-interactive-100 {
-  background-color: #006be3;
+  background-color: var(--color-interactive);
 }
 
 .bg-interactive-80 {
@@ -803,11 +803,11 @@ table {
 }
 
 .hover\:bg-interactive-dark:hover {
-  background-color: #1d60bf;
+  background-color: var(--color-interactive-dark);
 }
 
 .hover\:bg-interactive-100:hover {
-  background-color: #006be3;
+  background-color: var(--color-interactive);
 }
 
 .hover\:bg-interactive-80:hover {
@@ -907,11 +907,11 @@ table {
 }
 
 .focus\:bg-interactive-dark:focus {
-  background-color: #1d60bf;
+  background-color: var(--color-interactive-dark);
 }
 
 .focus\:bg-interactive-100:focus {
-  background-color: #006be3;
+  background-color: var(--color-interactive);
 }
 
 .focus\:bg-interactive-80:focus {
@@ -1083,11 +1083,11 @@ table {
 }
 
 .border-interactive-dark {
-  border-color: #1d60bf;
+  border-color: var(--color-interactive-dark);
 }
 
 .border-interactive-100 {
-  border-color: #006be3;
+  border-color: var(--color-interactive);
 }
 
 .border-interactive-80 {
@@ -1187,11 +1187,11 @@ table {
 }
 
 .hover\:border-interactive-dark:hover {
-  border-color: #1d60bf;
+  border-color: var(--color-interactive-dark);
 }
 
 .hover\:border-interactive-100:hover {
-  border-color: #006be3;
+  border-color: var(--color-interactive);
 }
 
 .hover\:border-interactive-80:hover {
@@ -1291,11 +1291,11 @@ table {
 }
 
 .focus\:border-interactive-dark:focus {
-  border-color: #1d60bf;
+  border-color: var(--color-interactive-dark);
 }
 
 .focus\:border-interactive-100:focus {
-  border-color: #006be3;
+  border-color: var(--color-interactive);
 }
 
 .focus\:border-interactive-80:focus {
@@ -1885,11 +1885,11 @@ table {
 }
 
 .font-headline {
-  font-family: Cabin, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: var(--headline-font), BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 .font-body {
-  font-family: Noto Sans, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: var(--body-font), BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 .font-normal {
@@ -3777,11 +3777,11 @@ table {
 }
 
 .text-interactive-dark {
-  color: #1d60bf;
+  color: var(--color-interactive-dark);
 }
 
 .text-interactive {
-  color: #006be3;
+  color: var(--color-interactive);
 }
 
 .text-interactive-night-dark {
@@ -3837,11 +3837,11 @@ table {
 }
 
 .hover\:text-interactive-dark:hover {
-  color: #1d60bf;
+  color: var(--color-interactive-dark);
 }
 
 .hover\:text-interactive:hover {
-  color: #006be3;
+  color: var(--color-interactive);
 }
 
 .hover\:text-interactive-night-dark:hover {
@@ -3897,11 +3897,11 @@ table {
 }
 
 .focus\:text-interactive-dark:focus {
-  color: #1d60bf;
+  color: var(--color-interactive-dark);
 }
 
 .focus\:text-interactive:focus {
-  color: #006be3;
+  color: var(--color-interactive);
 }
 
 .focus\:text-interactive-night-dark:focus {
@@ -4320,6 +4320,34 @@ table {
   z-index: auto;
 }
 
+/* Theme Support */
+
+[theme="financeit"] {
+  --headline-font: 'Cabin';
+  --body-font: 'Noto Sans';
+  --color-interactive: #006be3;
+  --color-interactive-dark: #1d60bf;
+}
+
+[theme="centah"] {
+  --headline-font: 'Roboto';
+  --body-font: 'Noto Sans';
+  --color-interactive: green;
+  --color-interactive-dark: red;
+}
+
+[theme="homedepot"] {
+  --headline-font: 'Helvetica';
+  --body-font: 'Helvetica';
+  --color-interactive: #f58321;
+  --color-interactive-dark: #ca4814;
+}
+
+[theme="lowes"] {
+  --color-interactive: #08c;
+  --color-interactive-dark: #0099e6;
+}
+
 /* Components */
 
 /* 01 - Buttons  */
@@ -4327,47 +4355,47 @@ table {
 .btn-primary {
   border-radius: .25rem;
   padding: 1rem;
-  background-color: #006be3;
+  background-color: var(--color-interactive);
   color: rgba(255, 255, 255, .95);
-  font-family: Noto Sans, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: var(--body-font), BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-size: .875rem;
   font-weight: 700;
   border-width: 2px;
-  border-color: #006be3;
+  border-color: var(--color-interactive);
 }
 
 .btn-primary:hover {
-  background-color: #1d60bf;
+  background-color: var(--color-interactive-dark);
   color: #fff;
-  border-color: #1d60bf;
+  border-color: var(--color-interactive-dark);
 }
 
 .btn-secondary {
   border-radius: .25rem;
   padding: 1rem;
   background-color: #fff;
-  color: #006be3;
-  font-family: Noto Sans, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  color: var(--color-interactive);
+  font-family: var(--body-font), BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-size: .875rem;
   font-weight: 700;
   border-width: 2px;
-  border-color: #006be3;
+  border-color: var(--color-interactive);
 }
 
 .btn-secondary:hover {
-  color: #1d60bf;
-  border-color: #1d60bf;
+  color: var(--color-interactive-dark);
+  border-color: var(--color-interactive-dark);
 }
 
 .btn-link {
-  color: #006be3;
-  font-family: Noto Sans, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  color: var(--color-interactive);
+  font-family: var(--body-font), BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-size: .875rem;
   font-weight: 700;
 }
 
 .btn-link:hover {
-  color: #1d60bf;
+  color: var(--color-interactive-dark);
 }
 
 @media (min-width: 576px) {
@@ -4437,11 +4465,11 @@ table {
   }
 
   .sm\:bg-interactive-dark {
-    background-color: #1d60bf;
+    background-color: var(--color-interactive-dark);
   }
 
   .sm\:bg-interactive-100 {
-    background-color: #006be3;
+    background-color: var(--color-interactive);
   }
 
   .sm\:bg-interactive-80 {
@@ -4541,11 +4569,11 @@ table {
   }
 
   .sm\:hover\:bg-interactive-dark:hover {
-    background-color: #1d60bf;
+    background-color: var(--color-interactive-dark);
   }
 
   .sm\:hover\:bg-interactive-100:hover {
-    background-color: #006be3;
+    background-color: var(--color-interactive);
   }
 
   .sm\:hover\:bg-interactive-80:hover {
@@ -4645,11 +4673,11 @@ table {
   }
 
   .sm\:focus\:bg-interactive-dark:focus {
-    background-color: #1d60bf;
+    background-color: var(--color-interactive-dark);
   }
 
   .sm\:focus\:bg-interactive-100:focus {
-    background-color: #006be3;
+    background-color: var(--color-interactive);
   }
 
   .sm\:focus\:bg-interactive-80:focus {
@@ -4813,11 +4841,11 @@ table {
   }
 
   .sm\:border-interactive-dark {
-    border-color: #1d60bf;
+    border-color: var(--color-interactive-dark);
   }
 
   .sm\:border-interactive-100 {
-    border-color: #006be3;
+    border-color: var(--color-interactive);
   }
 
   .sm\:border-interactive-80 {
@@ -4917,11 +4945,11 @@ table {
   }
 
   .sm\:hover\:border-interactive-dark:hover {
-    border-color: #1d60bf;
+    border-color: var(--color-interactive-dark);
   }
 
   .sm\:hover\:border-interactive-100:hover {
-    border-color: #006be3;
+    border-color: var(--color-interactive);
   }
 
   .sm\:hover\:border-interactive-80:hover {
@@ -5021,11 +5049,11 @@ table {
   }
 
   .sm\:focus\:border-interactive-dark:focus {
-    border-color: #1d60bf;
+    border-color: var(--color-interactive-dark);
   }
 
   .sm\:focus\:border-interactive-100:focus {
-    border-color: #006be3;
+    border-color: var(--color-interactive);
   }
 
   .sm\:focus\:border-interactive-80:focus {
@@ -5615,11 +5643,11 @@ table {
   }
 
   .sm\:font-headline {
-    font-family: Cabin, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-family: var(--headline-font), BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   }
 
   .sm\:font-body {
-    font-family: Noto Sans, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-family: var(--body-font), BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   }
 
   .sm\:font-normal {
@@ -7491,11 +7519,11 @@ table {
   }
 
   .sm\:text-interactive-dark {
-    color: #1d60bf;
+    color: var(--color-interactive-dark);
   }
 
   .sm\:text-interactive {
-    color: #006be3;
+    color: var(--color-interactive);
   }
 
   .sm\:text-interactive-night-dark {
@@ -7551,11 +7579,11 @@ table {
   }
 
   .sm\:hover\:text-interactive-dark:hover {
-    color: #1d60bf;
+    color: var(--color-interactive-dark);
   }
 
   .sm\:hover\:text-interactive:hover {
-    color: #006be3;
+    color: var(--color-interactive);
   }
 
   .sm\:hover\:text-interactive-night-dark:hover {
@@ -7611,11 +7639,11 @@ table {
   }
 
   .sm\:focus\:text-interactive-dark:focus {
-    color: #1d60bf;
+    color: var(--color-interactive-dark);
   }
 
   .sm\:focus\:text-interactive:focus {
-    color: #006be3;
+    color: var(--color-interactive);
   }
 
   .sm\:focus\:text-interactive-night-dark:focus {
@@ -8102,11 +8130,11 @@ table {
   }
 
   .md\:bg-interactive-dark {
-    background-color: #1d60bf;
+    background-color: var(--color-interactive-dark);
   }
 
   .md\:bg-interactive-100 {
-    background-color: #006be3;
+    background-color: var(--color-interactive);
   }
 
   .md\:bg-interactive-80 {
@@ -8206,11 +8234,11 @@ table {
   }
 
   .md\:hover\:bg-interactive-dark:hover {
-    background-color: #1d60bf;
+    background-color: var(--color-interactive-dark);
   }
 
   .md\:hover\:bg-interactive-100:hover {
-    background-color: #006be3;
+    background-color: var(--color-interactive);
   }
 
   .md\:hover\:bg-interactive-80:hover {
@@ -8310,11 +8338,11 @@ table {
   }
 
   .md\:focus\:bg-interactive-dark:focus {
-    background-color: #1d60bf;
+    background-color: var(--color-interactive-dark);
   }
 
   .md\:focus\:bg-interactive-100:focus {
-    background-color: #006be3;
+    background-color: var(--color-interactive);
   }
 
   .md\:focus\:bg-interactive-80:focus {
@@ -8478,11 +8506,11 @@ table {
   }
 
   .md\:border-interactive-dark {
-    border-color: #1d60bf;
+    border-color: var(--color-interactive-dark);
   }
 
   .md\:border-interactive-100 {
-    border-color: #006be3;
+    border-color: var(--color-interactive);
   }
 
   .md\:border-interactive-80 {
@@ -8582,11 +8610,11 @@ table {
   }
 
   .md\:hover\:border-interactive-dark:hover {
-    border-color: #1d60bf;
+    border-color: var(--color-interactive-dark);
   }
 
   .md\:hover\:border-interactive-100:hover {
-    border-color: #006be3;
+    border-color: var(--color-interactive);
   }
 
   .md\:hover\:border-interactive-80:hover {
@@ -8686,11 +8714,11 @@ table {
   }
 
   .md\:focus\:border-interactive-dark:focus {
-    border-color: #1d60bf;
+    border-color: var(--color-interactive-dark);
   }
 
   .md\:focus\:border-interactive-100:focus {
-    border-color: #006be3;
+    border-color: var(--color-interactive);
   }
 
   .md\:focus\:border-interactive-80:focus {
@@ -9280,11 +9308,11 @@ table {
   }
 
   .md\:font-headline {
-    font-family: Cabin, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-family: var(--headline-font), BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   }
 
   .md\:font-body {
-    font-family: Noto Sans, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-family: var(--body-font), BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   }
 
   .md\:font-normal {
@@ -11156,11 +11184,11 @@ table {
   }
 
   .md\:text-interactive-dark {
-    color: #1d60bf;
+    color: var(--color-interactive-dark);
   }
 
   .md\:text-interactive {
-    color: #006be3;
+    color: var(--color-interactive);
   }
 
   .md\:text-interactive-night-dark {
@@ -11216,11 +11244,11 @@ table {
   }
 
   .md\:hover\:text-interactive-dark:hover {
-    color: #1d60bf;
+    color: var(--color-interactive-dark);
   }
 
   .md\:hover\:text-interactive:hover {
-    color: #006be3;
+    color: var(--color-interactive);
   }
 
   .md\:hover\:text-interactive-night-dark:hover {
@@ -11276,11 +11304,11 @@ table {
   }
 
   .md\:focus\:text-interactive-dark:focus {
-    color: #1d60bf;
+    color: var(--color-interactive-dark);
   }
 
   .md\:focus\:text-interactive:focus {
-    color: #006be3;
+    color: var(--color-interactive);
   }
 
   .md\:focus\:text-interactive-night-dark:focus {
@@ -11767,11 +11795,11 @@ table {
   }
 
   .lg\:bg-interactive-dark {
-    background-color: #1d60bf;
+    background-color: var(--color-interactive-dark);
   }
 
   .lg\:bg-interactive-100 {
-    background-color: #006be3;
+    background-color: var(--color-interactive);
   }
 
   .lg\:bg-interactive-80 {
@@ -11871,11 +11899,11 @@ table {
   }
 
   .lg\:hover\:bg-interactive-dark:hover {
-    background-color: #1d60bf;
+    background-color: var(--color-interactive-dark);
   }
 
   .lg\:hover\:bg-interactive-100:hover {
-    background-color: #006be3;
+    background-color: var(--color-interactive);
   }
 
   .lg\:hover\:bg-interactive-80:hover {
@@ -11975,11 +12003,11 @@ table {
   }
 
   .lg\:focus\:bg-interactive-dark:focus {
-    background-color: #1d60bf;
+    background-color: var(--color-interactive-dark);
   }
 
   .lg\:focus\:bg-interactive-100:focus {
-    background-color: #006be3;
+    background-color: var(--color-interactive);
   }
 
   .lg\:focus\:bg-interactive-80:focus {
@@ -12143,11 +12171,11 @@ table {
   }
 
   .lg\:border-interactive-dark {
-    border-color: #1d60bf;
+    border-color: var(--color-interactive-dark);
   }
 
   .lg\:border-interactive-100 {
-    border-color: #006be3;
+    border-color: var(--color-interactive);
   }
 
   .lg\:border-interactive-80 {
@@ -12247,11 +12275,11 @@ table {
   }
 
   .lg\:hover\:border-interactive-dark:hover {
-    border-color: #1d60bf;
+    border-color: var(--color-interactive-dark);
   }
 
   .lg\:hover\:border-interactive-100:hover {
-    border-color: #006be3;
+    border-color: var(--color-interactive);
   }
 
   .lg\:hover\:border-interactive-80:hover {
@@ -12351,11 +12379,11 @@ table {
   }
 
   .lg\:focus\:border-interactive-dark:focus {
-    border-color: #1d60bf;
+    border-color: var(--color-interactive-dark);
   }
 
   .lg\:focus\:border-interactive-100:focus {
-    border-color: #006be3;
+    border-color: var(--color-interactive);
   }
 
   .lg\:focus\:border-interactive-80:focus {
@@ -12945,11 +12973,11 @@ table {
   }
 
   .lg\:font-headline {
-    font-family: Cabin, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-family: var(--headline-font), BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   }
 
   .lg\:font-body {
-    font-family: Noto Sans, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-family: var(--body-font), BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   }
 
   .lg\:font-normal {
@@ -14821,11 +14849,11 @@ table {
   }
 
   .lg\:text-interactive-dark {
-    color: #1d60bf;
+    color: var(--color-interactive-dark);
   }
 
   .lg\:text-interactive {
-    color: #006be3;
+    color: var(--color-interactive);
   }
 
   .lg\:text-interactive-night-dark {
@@ -14881,11 +14909,11 @@ table {
   }
 
   .lg\:hover\:text-interactive-dark:hover {
-    color: #1d60bf;
+    color: var(--color-interactive-dark);
   }
 
   .lg\:hover\:text-interactive:hover {
-    color: #006be3;
+    color: var(--color-interactive);
   }
 
   .lg\:hover\:text-interactive-night-dark:hover {
@@ -14941,11 +14969,11 @@ table {
   }
 
   .lg\:focus\:text-interactive-dark:focus {
-    color: #1d60bf;
+    color: var(--color-interactive-dark);
   }
 
   .lg\:focus\:text-interactive:focus {
-    color: #006be3;
+    color: var(--color-interactive);
   }
 
   .lg\:focus\:text-interactive-night-dark:focus {
@@ -15432,11 +15460,11 @@ table {
   }
 
   .xl\:bg-interactive-dark {
-    background-color: #1d60bf;
+    background-color: var(--color-interactive-dark);
   }
 
   .xl\:bg-interactive-100 {
-    background-color: #006be3;
+    background-color: var(--color-interactive);
   }
 
   .xl\:bg-interactive-80 {
@@ -15536,11 +15564,11 @@ table {
   }
 
   .xl\:hover\:bg-interactive-dark:hover {
-    background-color: #1d60bf;
+    background-color: var(--color-interactive-dark);
   }
 
   .xl\:hover\:bg-interactive-100:hover {
-    background-color: #006be3;
+    background-color: var(--color-interactive);
   }
 
   .xl\:hover\:bg-interactive-80:hover {
@@ -15640,11 +15668,11 @@ table {
   }
 
   .xl\:focus\:bg-interactive-dark:focus {
-    background-color: #1d60bf;
+    background-color: var(--color-interactive-dark);
   }
 
   .xl\:focus\:bg-interactive-100:focus {
-    background-color: #006be3;
+    background-color: var(--color-interactive);
   }
 
   .xl\:focus\:bg-interactive-80:focus {
@@ -15808,11 +15836,11 @@ table {
   }
 
   .xl\:border-interactive-dark {
-    border-color: #1d60bf;
+    border-color: var(--color-interactive-dark);
   }
 
   .xl\:border-interactive-100 {
-    border-color: #006be3;
+    border-color: var(--color-interactive);
   }
 
   .xl\:border-interactive-80 {
@@ -15912,11 +15940,11 @@ table {
   }
 
   .xl\:hover\:border-interactive-dark:hover {
-    border-color: #1d60bf;
+    border-color: var(--color-interactive-dark);
   }
 
   .xl\:hover\:border-interactive-100:hover {
-    border-color: #006be3;
+    border-color: var(--color-interactive);
   }
 
   .xl\:hover\:border-interactive-80:hover {
@@ -16016,11 +16044,11 @@ table {
   }
 
   .xl\:focus\:border-interactive-dark:focus {
-    border-color: #1d60bf;
+    border-color: var(--color-interactive-dark);
   }
 
   .xl\:focus\:border-interactive-100:focus {
-    border-color: #006be3;
+    border-color: var(--color-interactive);
   }
 
   .xl\:focus\:border-interactive-80:focus {
@@ -16610,11 +16638,11 @@ table {
   }
 
   .xl\:font-headline {
-    font-family: Cabin, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-family: var(--headline-font), BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   }
 
   .xl\:font-body {
-    font-family: Noto Sans, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-family: var(--body-font), BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   }
 
   .xl\:font-normal {
@@ -18486,11 +18514,11 @@ table {
   }
 
   .xl\:text-interactive-dark {
-    color: #1d60bf;
+    color: var(--color-interactive-dark);
   }
 
   .xl\:text-interactive {
-    color: #006be3;
+    color: var(--color-interactive);
   }
 
   .xl\:text-interactive-night-dark {
@@ -18546,11 +18574,11 @@ table {
   }
 
   .xl\:hover\:text-interactive-dark:hover {
-    color: #1d60bf;
+    color: var(--color-interactive-dark);
   }
 
   .xl\:hover\:text-interactive:hover {
-    color: #006be3;
+    color: var(--color-interactive);
   }
 
   .xl\:hover\:text-interactive-night-dark:hover {
@@ -18606,11 +18634,11 @@ table {
   }
 
   .xl\:focus\:text-interactive-dark:focus {
-    color: #1d60bf;
+    color: var(--color-interactive-dark);
   }
 
   .xl\:focus\:text-interactive:focus {
-    color: #006be3;
+    color: var(--color-interactive);
   }
 
   .xl\:focus\:text-interactive-night-dark:focus {

@@ -54,8 +54,8 @@ let fontColors = {
   'accent': '#02b77b',
 
   // Interactive
-  'interactive-dark': '#1d60bf',
-  'interactive': '#006be3',
+  'interactive-dark': 'var(--color-interactive-dark)',
+  'interactive': 'var(--color-interactive)',
 
   // Interactive Night
   'interactive-night-dark': '#4291d1',
@@ -86,8 +86,8 @@ let uiColors = {
   'accent-50': '#d3f3e8',
 
   // Interactive
-  'interactive-dark': '#1d60bf',
-  'interactive-100': '#006be3',
+  'interactive-dark': 'var(--color-interactive-dark)',
+  'interactive-100': 'var(--color-interactive)',
   'interactive-80': '#60a1eb',
   'interactive-60': '#b6d4f6',
   'interactive-40': '#ebf4fd',
@@ -178,7 +178,7 @@ module.exports = {
 
   fonts: {
     'headline': [
-      'Cabin',
+      'var(--headline-font)',
       'BlinkMacSystemFont',
       '-apple-system',
       'Segoe UI',
@@ -192,7 +192,7 @@ module.exports = {
       'sans-serif',
     ],
     'body': [
-      'Noto Sans',
+      'var(--body-font)',
       'BlinkMacSystemFont',
       '-apple-system',
       'Segoe UI',

@@ -9,7 +9,12 @@ include ../mixins/render-page-tree
         h4.br-prototype-nav-main-heading Prototype navigation
         p.br-prototype-nav-text Press Ctrl + M to toggle this navigation or click <a class="br-prototype-close-nav" href="#">here</a>.
         block prototypeNavAdditionalText
-
+        if config.themes && config.themes.length > 1
+          each theme in config.themes
+            .block.flex.items-center
+              input.mr-2(class='br-prototype-themeselector',type='radio', name='theme', id=theme.id, value=theme.id, checked=theme.default===true)
+              label(for=theme.id)= theme.label
+              
         if config.languages && config.languages.length > 1
             p.br-prototype-nav-text Language selection:
             each lang in config.languages

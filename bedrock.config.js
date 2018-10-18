@@ -48,6 +48,20 @@ module.exports = {
     svgIconClassPrefix: '',
     iconFontClassPrefix: 'if'
   },
+  themes: [{
+      id: "financeit",
+      label: "Financeit",
+      default: true
+    },{
+      id: "centah",
+      label: "Centah"
+    },{
+      id: "lowes",
+      label: "Lowes"
+    },{
+      id: "homedepot",
+      label: "Home Depot"
+    }],
   /**
    *  Pug config
    *  Unlikely that you need to change this

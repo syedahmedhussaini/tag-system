@@ -4,6 +4,7 @@ include ../../../core/templates/mixins/render-page-tree
 include ../../../core/templates/mixins/sample
 include ../../../core/templates/mixins/styleguide-settings
 include ../../../core/templates/mixins/languages
+include ../../../core/templates/mixins/components
 
 block pageVariables
     //- Use this block to append page variables in templates
@@ -41,7 +42,7 @@ html(dir="ltr" lang="en" class=htmlClass ? htmlClass : '')
           url('/fonts/Nucleo.svg#Nucleo') format('svg'); /* Legacy iOS */
           }
 
-    body(class=bodyClass ? bodyClass : '')
+    body.font-body(class=bodyClass ? bodyClass : '')
 
         block body
 
