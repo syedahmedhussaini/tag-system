@@ -43,9 +43,12 @@ html(dir="ltr" lang="en" class=htmlClass ? htmlClass : '')
           }
 
     body.font-body(class=bodyClass ? bodyClass : '')
-        .title-bar.bg-grey-dark.p-2.flex.flex-start.items-center.font-bold
+        .title-bar.bg-white.p-2.flex.flex-start.items-center.font-bold
           img.m-2(src="/images/financeit-logo.svg", alt="alt")
-          title.text-white.block.font-headline.m2.text-sm #{projectTitle}
+          title.text-accent.block.font-headline.m2.text-lg.uppercase.tracking-wide #{projectTitle}
+          span.text-interactive.block.font-headline.m2.text-xs.uppercase.tracking-wide.mx-4.flex.bg-grey-60.p-2.rounded-sm
+            | Theme selected:
+            .theme-selected Default
           
         block body
 

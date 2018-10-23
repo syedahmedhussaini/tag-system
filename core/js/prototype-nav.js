@@ -134,6 +134,7 @@ $(window).on('keyup', function (e) {
   // Switch label on this page
   $("body").data( "theme" );
   $('body').attr('theme', theme);
+  $('.theme-selected').text(theme);
  }
 
  function checkSelectedTheme(theme) {
