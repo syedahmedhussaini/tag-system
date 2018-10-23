@@ -43,7 +43,10 @@ html(dir="ltr" lang="en" class=htmlClass ? htmlClass : '')
           }
 
     body.font-body(class=bodyClass ? bodyClass : '')
-
+        .title-bar.bg-grey-dark.p-2.flex.flex-start.items-center.font-bold
+          img.m-2(src="/images/financeit-logo.svg", alt="alt")
+          title.text-white.block.font-headline.m2.text-sm #{projectTitle}
+          
         block body
 
         include ../../../core/templates/includes/prototype-nav

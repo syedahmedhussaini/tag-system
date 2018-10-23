@@ -100,7 +100,7 @@ let uiColors = {
   'interactive-night-40': '#badffe',
 
   // Grays
-  'grey-dark':'a6b0bf',
+  'grey-dark':'#a6b0bf',
   'grey-100': '#b5c0d0',
   'grey-80': '#d3d9e2',
   'grey-60': '#e1e6ec',

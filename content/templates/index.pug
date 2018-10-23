@@ -3,5 +3,19 @@ extends /templates/_layouts/master
 include ../../core/templates/mixins/render-page-tree
 
 block body
-    div(style="padding: 20px;")
-        +renderPageTree
+  .container.mx-auto.bg-white.bg-grey-40.p-4.border-2.border-grey-60(class="w-2/3")
+    h1.font-healine.text-2xl.text-xl.my-2 Getting started
+    
+    p Follow the guide Here
+    
+    br
+    br
+      
+    a.btn-primary.no-underline(href='https://github.com/syedahmedhussaini/tag-system') Set up the app
+    
+    
+    br
+    br
+    div.p-4
+      h4.text-body.text-xl.my-2 Navigation
+      +renderPageTree
